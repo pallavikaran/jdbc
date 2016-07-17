@@ -1,0 +1,7 @@
+create or replace procedure raise_salary(e_id number )
+is
+begin
+	update employee 
+	set salary=salary* 2.10
+	 where employee_id= e_id;
+	 end raise_salary;
